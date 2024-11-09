@@ -31,6 +31,12 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* #endregion */
 
 /* #region Header */
@@ -124,9 +130,7 @@ a {
   color: #fff;
   max-width: 496px;
   padding-top: 191px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px;
 }
 
 .bottom-item {
@@ -138,6 +142,16 @@ a {
   font-family: inherit;
   cursor: pointer;
   color: #fff;
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.page-title {
+  padding-bottom: 188px;
 }
 
 .bottom-item:hover,
@@ -270,14 +284,16 @@ a {
 
 .portfolio-list {
   padding-bottom: 120px;
-  gap: 24px 48px;
+  row-gap: 48px;
+  column-gap: 24px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .portfolio-item {
-  width: calc((100% - 72px) / 3);
-  gap: 8px;
+  width: calc((100% - 60px) / 3);
+  gap: 48px;
 }
 
 .portfolio-box {
